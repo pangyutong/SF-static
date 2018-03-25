@@ -1,0 +1,366 @@
+@charset "UTF-8";
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+select, input {
+    vertical-align: middle;
+}
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+/*防止拖动*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+/*  去掉图片低测默认的3像素空白缝隙*/
+table {
+    border-collapse: collapse;
+}
+
+body {
+    font-family: "Source Han Sans", 微软雅黑, "microsoft yahei", "HanHei SC", PingHei, "PingFang SC", sans-serif;
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-size: 100%;
+}
+
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+/*提取版心*/
+.w {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+/*header start*/
+#header {
+    min-width: 1280px;
+}
+.topheader {
+    line-height: 70px;
+    color: #333;
+    font-size: 14px;
+}
+
+.topheader .topli {
+    float: left;
+    height: 72px;
+}
+.topheader .topli>a {
+    display: inline-block;
+    height: 75px;
+}
+
+.topheader .topLeft {
+    margin-left: 30px;
+}
+
+.topheader .topLeft .topli {
+    padding: 0 14px;
+    position: relative;
+}
+.topheader .topLeft .topli s {
+    display: inline-block;
+    height: 30px;
+    width: 35px;
+    margin: 0 10px;
+    background: url("../images/sy-icon.png")no-repeat;
+
+}
+
+
+#akF01 {
+    background-position: 0 2px;
+    vertical-align: middle;
+}
+#akF02 {
+    background-position: 0 -27px;
+    vertical-align: middle;
+}
+.dropdown1,
+.dropdown2,
+.dropdown3,
+.dropdown4 {
+    position: absolute;
+    top: 75px;
+    left: 15px;
+    width: 300px;
+    height: 200px;
+    z-index: 22;
+    border-top: 1px solid #ccc;
+    display: none;
+    background-color: rgba(255,255,255,.9);
+    border-radius: 8px;
+}
+
+/*topleft end*/
+
+
+.topheader .topRight .topli {
+    padding: 0 10px;
+}
+
+.topheader .topRight .join_ico {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    background: url("../images/header-phoneicon.png") no-repeat 0 -28px;
+}
+
+.topheader .topRight .return_icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    background: url("../images/header-phoneicon.png") no-repeat 0 -57px;
+}
+.topheader .topRight .cn_ico {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    background: url("../images/header-phoneicon.png") no-repeat 0 -83px;
+}
+.topheader .topRight .topli:last-child {
+    position: relative;
+}
+.topheader .topRight .akInx {
+    position: absolute;
+    top: 75px;
+    right: 15px;
+    width: 180px;
+    height: 300px;
+    background-color: deepskyblue;
+    display: none;
+    z-index: 22;
+}
+/*header end*/
+/*footer start*/
+#footer {
+    height: 534px;
+    width: 100%;
+    border-top: 8px solid #dc1e32;
+    background: #000;
+    position: relative;
+    padding-top: 50px;
+}
+
+#top .fl {
+    width: 1010px;
+    border-right: 2px solid #333;
+}
+
+
+#top .fl a {
+    color: #b1b1b1;
+    font-size: 14px;
+}
+#top .fl a:hover {
+    color: #fff;
+}
+#top .fl .title {
+    margin-bottom: 20px;
+}
+#top .fl .title a {
+    font-size: 16px;
+    color: #fff;
+}
+
+#top .fl td {
+    vertical-align: top;
+    padding-right: 6px;
+}
+#top .fl table {
+    border-collapse: collapse;
+    width: 100%;
+    border-right: 1px solid ;
+}
+#top .fl li {
+    line-height: 19px;
+    margin-bottom: 10px;
+}
+
+
+#top .callAway {
+    float: left;
+    width: 269px;
+    text-align: center;
+}
+#top .callAway .title a {
+    color: #fff;
+    font-size: 16px;
+}
+#top .callAway .title {
+    margin-bottom: 35px;
+}
+
+#top .callAway .share a {
+    display: inline-block;
+    width: 58px;
+    height: 58px;
+}
+/*footer 三个小图标鼠标经过*/
+#footer {
+    min-width: 1280px;
+}
+#top {
+    height: 250px;
+}
+#top .callAway .share .xinlang {
+    background: url("../images/label-top-r-btn.png") no-repeat;
+}
+#top .callAway .share .xinlang:hover {
+    background: url("../images/label-top-r-btn-b.png") no-repeat;
+}
+#top .callAway .share .weixin {
+    background: url("../images/label-top-r-btn.png") no-repeat -80px 0;
+    margin: 0 15px;
+}
+#top .callAway .share .weixin:hover {
+    background: url("../images/label-top-r-btn-b.png") no-repeat -80px 0;
+    margin: 0 15px;
+}
+#top .callAway .share .online {
+     background: url("../images/label-top-r-btn.png") no-repeat -158px 0;
+}
+#top .callAway .share .online:hover {
+    background: url("../images/label-top-r-btn-b.png") no-repeat -158px 0;
+}
+#top .callAway .share .pop {
+    display: none;
+    width: 185px;
+    position: absolute;
+    right: -63px;
+    bottom: 76px;
+    padding: 10px;
+    box-sizing: border-box;
+    background: #fff;
+    z-index: 11;
+    color: #333;
+}
+
+#center {
+    width: 100%;
+    height: 75px;
+    margin-top: 50px;
+    padding: 15px 0;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+#center .fcontainer li {
+    float: left;
+    width: 120px;
+    height: 43px;
+    background: url("../images/label-center-ul-btn-h.png") no-repeat;
+}
+#center .fcontainer li:not(:last-of-type) {
+    border-right: 1px solid #333;
+}
+
+
+#down {
+    overflow: hidden;
+    padding: 20px 0 50px;
+    border-bottom: 1px solid #333;
+    width: 100%;
+}
+#down a {
+    color: #b1b1b1;
+}
+#down .policy li {
+    float: left;
+}
+
+#down .copyright li {
+    float: left;
+}
+
+
+#down .policy li a {
+    height: 16px;
+    line-height: 16px;
+    display: inline-block;
+    vertical-align: baseline;
+    padding: 0 8px;
+    border-right: 1px solid #b1b1b1;
+}
+
+#down .policy li a:hover {
+    color: #fff;
+}
+#down .policy li:last-child a {
+    border-right: 0;
+}
+
+
+#down .gov li {
+    float: left;
+
+}
+#down .gov li img {
+    height: 35px;
+    vertical-align: bottom;
+}
+/*footer end*/

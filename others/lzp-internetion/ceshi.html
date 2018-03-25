@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--<link rel="stylesheet" href="css/youxuan.css">-->
+    <style>
+        .asd>li{
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: #000;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<script src="jquery-1.12.4.js"></script>
+
+<body>
+    <ul class="asd">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <script>
+        var s=6;
+        $('.asd>li').click(function () {
+            s=$(this).index();
+            $(this).siblings().css('backgroundColor','black');
+            $(this).css('backgroundColor','red');
+        })
+        $('.asd>li').mouseenter(function () {
+            $(this).siblings().css('backgroundColor','black');
+            $(this).css('backgroundColor','red');
+            $(this).parents().children().eq(s).css('backgroundColor','red');
+        })
+        $('.asd>li').mouseleave(function () {
+            $(this).css('backgroundColor','black');
+            $(this).parents().children('div').css('backgroundColor','black');
+            $(this).parents().children().eq(s).css('backgroundColor','red')
+        })
+    </script>
+</body>
+</html>

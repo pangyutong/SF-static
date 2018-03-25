@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>顺丰优选商城登录页面</title>
+    <link href="css/global.css" rel="stylesheet" type="text/css" />
+    <link href="css/layout.css" rel="stylesheet" type="text/css" />
+    <script>
+        function emailFocus(){
+            var email=document.getElementById("email");
+            email.className="login_content_input login_content_input_Focus";
+        }
+
+        /*鼠标离开email文本框中时*/
+        function emailBlur(){
+            var email=document.getElementById("email");
+            email.className="login_content_input";
+        }
+
+        /*鼠标在密码文本框中时*/
+        function pwdFocus(){
+            var pwd=document.getElementById("pwd");
+            pwd.className="login_content_input login_content_input_Focus";
+        }
+
+        /*鼠标离开密码文本框中时*/
+        function pwdBlur(){
+            var pwd=document.getElementById("pwd");
+            pwd.className="login_content_input";
+        }
+        /*单击登录按钮时，验证email地址和密码是否为空*/
+        function checkLogin(){
+            var email=document.getElementById("email").value;
+            var pwd=document.getElementById("pwd").value;
+            if(email==""){
+                alert("请输入Email地址或昵称");
+                return false;
+            }
+            if(pwd==""){
+                alert("请输入密码");
+                return false;
+            }
+            return true;
+        }
+
+        /*单击快速注册进入注册页面*/
+        function jump(){
+            window.location.href="register.html";
+        }
+
+
+    </script>
+</head>
+
+<body>
+<div id="header">
+    <div class="login_header_left"><img src="images/logo.jpg" alt="logo"></div>
+    <div class="login_header_mid"></div>
+    <!-- <div class="login_header_right"><a href="qiye.html" class="blue">首页</a> | <a href="register.html" class="blue">注册</a></div> -->
+</div>
+
+<div id="main">
+    <div class="login_main_left">
+        <div><!-- <img src="images/login_main_01.jpg" alt="中间图片">
+          <img src="images/login_main_02.jpg" alt="中间图片"> -->
+            <img src="images/greens2.jpg" alt="">
+            <!-- <img src="images/login_main_03.jpg" alt="中间图片"> -->
+        </div>
+        <div class="login_main_end">
+            <dl class="login_green">
+                <dt>更多选择、更低价格</dt>
+                <dd>100万种商品包含图书、数码、美妆、运动健康等，价格低于地面店20%以上</dd>
+            </dl>
+
+            <div class="login_main_dotted"></div>
+            <dl class="login_green">
+                <dt>全场免运费、货到付款</dt>
+                <dd>免费送货上门、360个城市货到付款。另有网上支付、邮局汇款等多种支付方式</dd>
+            </dl>
+
+            <div class="login_main_dotted"></div>
+            <dl class="login_green">
+                <dt>真实、优质的商品评论</dt>
+                <dd>千万用户真实、优质的商品评论，给您多角度、全方位的购物参考</dd>
+            </dl>
+        </div>
+    </div>
+    <div class="login_main_mid">
+        <div class="login_content_top">请登录顺丰优选商城</div>
+        <div class="login_content_line"></div>
+        <form action="" method="post" onSubmit="return checkLogin()">
+            <dl class="login_content">
+                <dt>Email地址或昵称：</dt>
+                <dd><input id="email" type="text" class="login_content_input" onFocus="emailFocus()" onBlur="emailBlur()"></dd>
+            </dl>
+            <dl class="login_content">
+                <dt>密码：</dt>
+                <dd><input id="pwd" type="password" class="login_content_input" onFocus="pwdFocus()" onBlur="pwdBlur()"></dd>
+            </dl>
+            <dl class="login_content">
+                <dt></dt>
+                <dd><input id="btn" value=" " type="submit" class="login_btn_out" onclick="javascrtpt:window.location.href='http://localhost:63342/www.sfbeast.com/index.html?_ijt=fbuosfopiqd1i3i7se3g790712'" onmouseover="this.className='login_btn_over'"  onmouseout="this.className='login_btn_out'"></dd>
+            </dl>
+        </form>
+        <div class="login_content_dotted"></div>
+        <div class="login_content_end_bg">
+            <div class="login_content_end_bg_top">
+                <label class="login_content_bold">还不是顺丰用户？</label>快捷方便的免费注册，让你立刻尽享顺丰提供的条项优惠服务......
+            </div>
+            <div class="login_content_end_bg_end">
+                <input  class="login_register_out" value=" " type="button" onmouseover="this.className='login_register_over'"  onmouseout="this.className='login_register_out'" onClick="jump()">
+            </div>
+
+        </div>
+
+    </div>
+    <!-- <div class="login_main_right"><img src="images/login_main_04.jpg" alt="右侧图片"></div> -->
+</div>
+
+</body>
+</html>

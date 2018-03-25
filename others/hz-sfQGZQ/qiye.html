@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>企业专区</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/qy.css">
+    <link rel="shortcut icon" href="favicon.ico"/>
+
+</head>
+<body>
+<!--top部分 -->
+<div class="top" id="top">
+    <div class="w top_inner">
+        <!--冷链部分  left-->
+        <div class="top_inner_send fl">
+            <ul>
+                <li>冷链配送</li>
+                <li>顺丰到家</li>
+                <li>送至 :</li>
+                <li>
+                    <div class="city" id="city"> <!--在此注册鼠标进入弹出框-->
+                        上海
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="top_inner_center fl">
+            <ul class="clearfix">
+                <li>嘿,欢迎来顺丰优选！</li>
+                <li>
+                    <a href="login_in/register.html">
+                        请登录 | 免费注册
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        我的订单
+                    </a>
+                </li>
+                <li id="j_hide_1">
+                    <a href="#">
+                        我的优选<em></em>
+                        <ul  class="clearfix" id="hide">
+                            <li><a href="#">我的优选<em></em></a></li>
+                            <li><a href="#">我的订单</a></li>
+                            <li><a href="#">我的收藏</a></li>
+                            <li><a href="#">我的积分</a></li>
+                            <li><a href="#">我的积分卡</a></li>
+                            <li><a href="#">我的优惠卡</a></li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="mobile" id="mobile">
+                    <a href="#">
+                        <i></i>
+                        移动客户端
+                    </a>
+                    <div class="dd" id="j_dd">
+                        <div class="dv">
+
+                        </div>
+                        <div class="line">
+                        </div>
+                        <div class="dv2 fl">
+                            <p>扫我立即下载</p>
+                            <p>加入我们</p>
+                        </div>
+                        <div class="download">
+                            <a href="#" class="left"></a>
+                            <a href="#" class="right"></a>
+                        </div>
+                        <div class="fl deepColor">
+                            <a href="#">先摇卷</a> <a href="#">后买单</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="top_inner_help fr">
+            <ul>
+                <li>
+                    <a href="#">帮助中心</a>
+                    <em></em>
+                </li>
+                <li id="j_inner_help">
+                    <a href="#">网站导航</a>
+                    <i></i>
+                    <div class="nav-mask" id="nav-mask">
+                    </div>
+                </li>
+                <li>
+                    <a href="#" title="关注顺丰">
+                        <img src="images/weibo.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="关注微信">
+                        <img src="images/icon-weixin.png" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+</div>
+<!--top部分结束-->
+<!--header-->
+<div class="header">
+    <div class="header_inner w">
+        <div class="logo fl">
+            <a href="#" class="logo_target">
+
+            </a>
+            <a href="#" class="logo_prece">
+
+            </a>
+            <img src="images/logo_word.jpg" alt="">
+        </div>
+        <div class="header_inner_search">
+            <input type="text" placeholder="车厘子" class="txt">
+            <input type="submit" class="submit" value="搜索">
+            <div class="keyWords">
+                <a href="javascript:void(0) ">牛排</a>
+                <a href="javascript:void(0) ">盐焗鸡</a>
+                <a href="javascript:void(0) ">燕窝</a>
+                <a href="javascript:void(0) ">橙子</a>
+                <a href="javascript:void(0) ">五粮液</a>
+                <a href="javascript:void(0) ">燕窝</a>
+                <a href="javascript:void(0) ">洋酒</a>
+                <a href="javascript:void(0) ">白虾</a>
+                <a href="javascript:void(0) ">鳕鱼</a>
+                <a href="javascript:void(0) ">牛奶</a>
+            </div>
+        </div>
+        <div class="myCar" id="j_myCar">
+            <i></i>
+            <a href="#">我的购物车</a>
+            <b id="carStore">
+                0
+            </b>
+            <div class="car_inner" id="j_car_inner" style="display: none;">
+                <em></em>
+                <span>购物车中暂无商品</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!--header结束-->
+<!--中间导航栏开始-->
+<div class="mainNav clearfix">
+    <div class="mainNav-container w clearfix">
+        <div class="mainNav-nav" id="J_mainNav-nav">
+            <a href="#" class="nav-a">精选商品分类</a>
+
+            <div class="left-nav" id="J_left-nav">
+                <ul class="left-ul clearfix" id="J_left-ul">
+                <!--动态生成部分-->
+                </ul>
+            </div>
+        </div>
+        <ul class=" nav-ul clearfix">
+            <li><a href="javascript:void(0)">首页</a></li>
+            <li><a href="javascript:void(0)">优选生鲜</a></li>
+            <li><a href="javascript:void(0)">优选厨房</a></li>
+            <li><a href="../lzp-internetion/sfYXGJ.html">优选国际</a></li>
+            <li><a href="javascript:void(0)">企业专区</a></li>
+            <li><a href="javascript:void(0)">优选会员</a></li>
+        </ul>
+
+    </div>
+
+
+</div>
+<!--中间导航栏结束-->
+<!--轮播图部分开始-->
+<div class="center-inner w clearfix">
+    <!--左侧内容-->
+    <div class="cen-left" id="cen-left">
+    <ul class="cen-left-ul" id="cen-left-ul">
+        <li>
+            <span>
+                <s class="center-spr"></s>
+                <a href="#" class="cen-span-a">精选礼品礼盒</a>
+            </span>
+            <a href="#">优选推荐</a>
+        </li>
+        <li>
+            <span>
+                <s class="center-spr"></s>
+                <a href="#" class="cen-span-a">优选卡</a>
+            </span>
+            <a href="#">电子卡</a>
+            <a href="#">实体卡</a>
+        </li>
+        <li>
+            <span>
+                <s class="center-spr"></s>
+                <a href="#" class="cen-span-a">提货卡</a>
+            </span>
+            <a href="#">六一选礼</a>
+            <a href="#">定制礼券</a>
+        </li>
+        <li class="cen-hold-li"></li>
+        <li class="cen-qy-service">
+            <a href="#">企业服务</a>
+        </li>
+    </ul>
+    </div>
+    <!--左侧内容结束-->
+<!--轮播图开始-->
+<div class="cen-scroll">
+    <div class="cen-scroll-inner">
+        <ul id="list">
+            <li style="display: block;"><img src="images/scr1.jpg" alt=""></li>
+            <li ><img src="images/scr2.jpg" alt=""></li>
+            <li ><img src="images/scr3.jpg" alt=""></li>
+        </ul>
+        <ol id="nav">
+            <li class="active">1</li>
+            <li>2</li>
+            <li>3</li>
+        </ol>
+        <!--&lt;!&ndash;左右焦点&ndash;&gt;-->
+        <!--<a href="#" class="scr-left">-->
+            <!--<s></s>-->
+        <!--</a>-->
+        <!--<a href="#" class="scr-right">-->
+            <!--<s></s>-->
+        <!--</a>-->
+    </div>
+</div>
+    <!--轮播图结束-->
+    <!--右侧图片-->
+<div class="cen-right">
+    <ul>
+        <li><a href="#"><img src="images/nav-right.png"></a></li>
+        <li><a href="#"><img src="images/nav-right2.jpg"></a></li>
+    </ul>
+</div>
+</div>
+<!--轮播图部分结束-->
+<!--中心广告开始-->
+<div class="center-ad w">
+    <img src="images/scr-bottom.jpg" alt="">
+</div>
+
+<!-- 抢购部分开始 -->
+<div class="time_buy w clearfix">
+    <div class="time_buy-left">
+        <div class="time_buy-lt">
+            <span class="fl shizhong"></span>
+            <h2 class="fl">限时抢购</h2>
+            <dl>
+                <dd id="q1">还剩</dd>
+                <!--<dd>0</dd>-->
+                <dd><p id="p-hour"></p></dd>
+                <dd id="hour">时</dd>
+                <!--<dd>2</dd>-->
+                <dd><p id="p-minute"></p></dd>
+                <dd id="min">分</dd>
+                <!--<dd>2</dd>-->
+                <dd><p id="p-second"></p></dd>
+                <dd id="s">秒</dd>
+            </dl>
+            <div class="fl jieshu"><a href="javascript:;">结束</a></div>
+            <h3 class="fr"><a href="#">下期预告</a></h3>
+        </div>
+        <div class="time_buy-bt">
+            <ul class="time_buy-bt-now">
+                <li>
+                    <a href="javascript:void(0)"><img src="images/jingke.jpg" alt="" class="pic"></a>
+                    <p>经稞 有机青稞米 2.5kg</p>
+                    <span>￥298</span>
+                    会员价<em>￥258</em>
+                    <a id="js_qgqk" href="javascript:void(0)" class="qiangGou">抢购</a>
+                </li>
+
+                <li>
+                    <a href="javascript:void(0)"><img src="images/dan.jpg" alt="" class="pic"></a>
+                    <p>土大妈 土大妈新鲜鸽子蛋20枚</p>
+                    <span>￥175.8</span>
+                    会员价<em>￥158.2</em>
+                    <a id="js_qgtd" href="javascript:void(0)" class="qiangGou">抢购</a>
+                </li>
+
+                <li>
+                    <a href="javascript:void(0)"><img src="images/qkl.jpg" alt="" class="pic"></a>
+                    <p>瑞士莲lindt软心精选巧克力</p>
+                    <span>￥66</span>
+                    会员价<em>￥59.9</em>
+                    <a id="js_qgrsl" href="javascript:void(0)" class="qiangGou">抢购</a>
+                </li>
+
+                <li>
+                    <a href="javascript:void(0)"><img src="images/jiu.jpg" alt="" class="pic"></a>
+                    <p>真露 新竹碳酒 360ml</p>
+                    <span>14.5</span>
+                    会员价<em>12.5</em>
+                    <a id="js_qgzl" href="javascript:void(0)" class="qiangGou">抢购</a>
+                </li>
+
+                <li>
+                    <a href="javascript:void(0)"><img src="images/qs.jpg" alt="" class="pic"></a>
+                    <p>屈臣氏Watsons汤力汽水</p>
+                    <span>￥298</span>
+                    会员价<em>￥258</em>
+                    <a id="js_qgqcs" href="javascript:void(0)" class="qiangGou"><span></span>抢购</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="time_buy-right">
+        <a href="#" class="xinYi">
+            <img src="images/xinyi.jpg" alt="">
+        </a>
+    </div>
+</div>
+<!-- 抢购部分结束 -->
+
+<!-- 车厘子部分开始 -->
+<div class="chlz w">
+    <a href="#">
+        <img src="images/clz.jpg" alt="">
+    </a>
+</div>
+<!-- 车厘子部分结束 -->
+
+<!-- 选择部分开始 -->
+
+<div class="check_one w clearfix">
+    <div class="check_one-left">
+        <div class="left-top">
+            <span></span>
+            <a href="#">水果</a>
+            <a href="#">蔬菜</a>
+        </div>
+        <div class="left-bottom">
+            <a href="#">
+                <img src="images/cheng.jpg" alt="">
+            </a>
+        </div>
+    </div>
+    <div class="check_one-middle">
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="images/caomei.jpg" alt="">
+                    <a id="addCar01" href="javascript:void(0)" class="gouwucar">
+                        <span></span>
+                        加入购物车
+                    </a>
+                </a>
+
+                <p>山胖子 淡雪白草莓 每盒25枚</p>
+                <span>￥128</span>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/shengnvguo.jpg" alt="">
+                    <a id="addCar02" href="javascript:void(0)" class="gouwucar">
+                        <span></span>
+                        加入购物车
+                    </a>
+                </a>
+                <p>厚利 买3斤送1斤 海南陵水千</p>
+                <span>￥69</span>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/chelizi.jpg" alt="">
+                    <a id="addCar03" href="javascript:void(0)" class="gouwucar">
+                        <span></span>
+                        加入购物车
+                    </a>
+                </a>
+                <p>优果优选 智利进口车厘子2斤</p>
+                <span>￥138</span>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/hongti.jpg" alt="">
+                    <a id="addCar04" href="javascript:void(0)" class="gouwucar">
+                        <span></span>
+                        加入购物车
+                    </a>
+                </a>
+                <p>优果优选 秘鲁进口红提0.9kg</p>
+                <span>￥78</span>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/tangju.jpg" alt="">
+                    <a id="addCar05" href="javascript:void(0)" class="gouwucar">
+                        <span></span>
+                        加入购物车
+                    </a>
+                </a>
+                <p>七公主果园 三峡秭归蜜糖椪柑</p>
+                <span>￥69.9</span>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/jinju.jpg" alt="">
+                    <a id="addCar06" href="javascript:void(0)" class="gouwucar">
+                        <span></span>
+                        加入购物车
+                    </a>
+                </a>
+                <p>爱尝鲜儿 广西融安脆皮金桔</p>
+                <span>￥39.9</span>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/jinguo.jpg" alt="">
+                    <a id="addCar07" href="javascript:void(0)" class="gouwucar">
+                        <span></span>
+                        加入购物车
+                    </a>
+                </a>
+                <p>果缤纷 意大利优选金果15粒</p>
+                <span>￥118</span>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/juzi.jpg" alt=""> </a>
+                <a id="addCar08" href="javascript:void(0)" class="gouwucar">
+                    <span></span>
+                    加入购物车
+                </a>
+                <p>花果山 中华红砂糖橘 4斤</p>
+                <span>￥59.9</span>
+            </li>
+        </ul>
+    </div>
+    <div class="check_one-right">
+        <div class="right-top">
+            <ul>
+                <li>
+                    <a href="#">奇异果</a>
+                </li>
+                <li>
+                    <a href="#">梨</a>
+                </li>
+                <li>
+                    <a href="#">苹果</a>
+                </li>
+                <li>
+                    <a href="#">龙眼</a>
+                </li>
+                <li>
+                    <a href="#">柑橘</a>
+                </li>
+                <li>
+                    <a href="#">椰青</a>
+                </li>
+                <li>
+                    <a href="#">柚子</a>
+                </li>
+                <li>
+                    <a href="#">蔬菜</a>
+                </li>
+                <li>
+                    <a href="#">枣</a>
+                </li>
+            </ul>
+        </div>
+        <div class="right-bottom">
+            <a href="#">
+                <img src="images/fennuo.jpg" alt="">
+            </a>
+        </div>
+    </div>
+
+</div>
+<!-- 选择部分结束 -->
+<!--footer-service-->
+<div class="footer-service">
+    <ul class="w">
+        <li class="quanqiu"></li>
+        <li class="chandi"></li>
+        <li class="qcll"></li>
+        <li class="sfzd"></li>
+    </ul>
+</div>
+<!--footer-service结束-->
+<!--footer-->
+<div class="footer">
+    <div class="w foot">
+        <div class="foot-left">
+            <ul>
+                <li class="service">9533858</li>
+                <li>周一至周日8:30-22:00</li>
+            </ul>
+        </div>
+        <div class="foot-middle">
+            <ul class="middle-inner fl">
+                <li class="mid-current"><a href="javascript:;">购物指南</a></li>
+                <li><a href="javascript:void(0)">积分制度</a></li>
+                <li><a href="javascript:void(0)">会员介绍</a></li>
+                <li><a href="javascript:void(0)">购物流程</a></li>
+                <li><a href="javascript:void(0)">常见问题</a></li>
+            </ul>
+            <ul class="middle-inner fl">
+                <li class="mid-current"><a href="javascript:;">配送服务</a></li>
+                <li><a href="javascript:void(0)">配送政策</a></li>
+                <li><a href="javascript:void(0)">配送运费</a></li>
+                <li><a href="javascript:void(0)">配送范围</a></li>
+                <li><a href="javascript:void(0)">开箱验货</a></li>
+            </ul>
+            <ul class="middle-inner fl">
+                <li class="mid-current"><a href="javascript:;">支付方式</a></li>
+                <li><a href="javascript:void(0)">货到付款</a></li>
+                <li><a href="javascript:void(0)">优选卡</a></li>
+                <li><a href="javascript:void(0)">发票制度</a></li>
+                <li><a href="javascript:void(0)">在线支付</a></li>
+            </ul>
+            <ul class="middle-inner fl">
+                <li class="mid-current"><a href="javascript:;">售后服务</a></li>
+                <li><a href="javascript:void(0)">退款说明</a></li>
+                <li><a href="javascript:void(0)">退换货政策</a></li>
+                <li><a href="javascript:void(0)">隐私条款</a></li>
+                <li><a href="javascript:void(0)">退换货流程</a></li>
+            </ul>
+            <ul class="middle-inner fl">
+                <li class="mid-current"><a href="javascript:void(0)">手机客户端</a></li>
+                <li>
+                    <div class="erweima">
+
+                    </div>
+                </li>
+            </ul>
+            <ul class="middle-inner fl">
+                <li class="mid-current"><a href="javascript:void(0)">官方微信</a></li>
+                <li>
+                    <div class="organ">
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="deepfoot w">
+        <div class="pic fl">
+            <a href="javascript:;">
+                <img src="images/bottom_sm.png" alt="">
+            </a>
+            <a href="javascript:;">
+                <img src="images/credit.png" alt="">
+            </a>
+            <a href="javascript:;">
+                <img src="images/credit.png" alt="">
+            </a>
+        </div>
+        <div class="copy fl">
+            <a href="javascript:void(0)">关于我们</a>
+            <a href="javascript:void(0)">联系我们</a>
+            <a href="javascript:void(0)">招聘人才</a>
+            <a href="javascript:void(0)">友情链接</a>
+            <span>Copyright© 顺丰优选 sfbest.com 版权所有</span>
+            <p>京公网安备11010502026831号京ICP证150325号 <a href="javascript:;">食品经营许可证JY11113080533669号</a> <a href="javascript:;">企业营业执照</a></p>
+        </div>
+    </div>
+
+</div>
+<!--footer结束-->
+<!--固定定位部分-->
+<ul class="gouw" id="gouw">
+    <li id="targetLi"><a href="javascript:void(0)"></a></li>
+    <li ><a href=""></a></li>
+    <li ><a href=""></a></li>
+    <li ><a href=""></a></li>
+</ul>
+<ul class="tan tan1">
+    <li class="che che1">购物车内暂无商品，赶紧抢购吧！</li>
+</ul>
+<ul class="tan tan2">
+    <li class="che che2">
+        <div class="liu">您的浏览记录</div>
+        <div class="wuli">
+            暂无浏览记录
+        </div>
+    </li>
+</ul>
+<ul class="tan tan3">
+    <li class="che che3">
+        <div class="erwei"></div>
+        <div class="yao">先摇券 后买单</div>
+        <div class="we">扫描我，即可下载</div>
+        <div class="rng">顺丰优选客户端</div>
+    </li>
+</ul>
+
+<!--<div class="backToTop" id="backToTop"></div>-->
+</body>
+<script src="js/jquery-1.12.2.js"></script>
+<script src="js/common.js"></script>
+<script src="js/qy.js"></script>
+<script src="../../js/pao.js"></script>
+</html>

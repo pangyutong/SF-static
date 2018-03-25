@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>顺丰优选</title>
+
+    <link rel="stylesheet" href="css/base.css">
+    <script src="js/jq.js"></script>
+    <script src="js/common.js"></script>
+
+</head>
+<body>
+<!--top部分 -->
+<div class="top" id="top">
+    <div class="w top_inner">
+        <!--冷链部分  left-->
+        <div class="top_inner_send fl">
+            <ul>
+                <li>冷链配送</li>
+                <li>顺丰到家</li>
+                <li>送至 :</li>
+                <li id="city">
+                    <div class="city" > <!--在此注册鼠标进入弹出框-->
+                        <span>上海</span>
+                        <div class="city-hidden"  id="j-hidden">
+                            <span class="mask-city">上海</span>
+                            <div class="city-hidden-top">
+                                <span>请选择您的收货城市</span>
+                            </div>
+                            <div class="city-hidden-mid">
+                                <a href="javascript:;">北京</a>
+                                <a href="javascript:;">上海</a>
+                                <a href="javascript:;">广州</a>
+                                <a href="javascript:;">深圳</a>
+                                <a href="javascript:;">天津</a>
+                                <a href="javascript:;">苏州</a>
+                                <a href="javascript:;">杭州</a>
+                                <a href="javascript:;">南京</a>
+                                <a href="javascript:;">无锡</a>
+                                <a href="javascript:;">青岛</a><br />
+                            </div>
+                            <div class="moreCity">
+                                 更多城市:
+                            </div>
+                            <div class="city-hidden-foot">
+                                <div class="hidden-one">
+                                    <dl>
+                                        <dt>华东：</dt>
+                                        <dd>上海</dd>
+                                        <dd>江苏</dd>
+                                        <dd>浙江</dd>
+                                        <dd>安徽</dd>
+                                    </dl>
+
+                                    <dl>
+                                        <dt>华南：</dt>
+                                        <dd>广东</dd>
+                                        <dd>福建</dd>
+                                        <dd>海南</dd>
+                                        <dd>广西</dd>
+                                    </dl>
+
+                                    <dl>
+                                        <dt>华北：</dt>
+                                        <dd>北京</dd>
+                                        <dd>天津</dd>
+                                        <dd>河北</dd>
+                                        <dd>山东</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>华中：</dt>
+                                        <dd>湖北</dd>
+                                        <dd>江西</dd>
+                                        <dd>湖南</dd>
+                                    </dl>
+
+                                    <dl>
+                                        <dt>东北：</dt>
+                                        <dd>辽宁</dd>
+                                        <dd>吉林</dd>
+                                        <dd>黑龙江</dd>
+                                    </dl>
+
+                                    <dl>
+                                        <dt>西南：</dt>
+                                        <dd>重庆</dd>
+                                        <dd>四川</dd>
+                                        <dd>云南</dd>
+                                        <dd>贵州</dd>
+                                    </dl>
+
+                                    <dl>
+                                        <dt>西北：</dt>
+                                        <dd>陕西</dd>
+                                        <dd>甘肃</dd>
+                                        <dd>宁夏</dd>
+                                    </dl>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="top_inner_center fl">
+            <ul>
+                <li>嘿,欢迎来顺丰优选！</li>
+                <li>
+                    <a href="#">
+                        请登录 | 免费注册
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        我的订单
+                    </a>
+                </li>
+                <li id="j_hide_1">
+                    <a href="#">
+                        我的优选<em></em>
+                        <ul id="hide">
+                            <li><a href="#">我的优选<em></em></a></li>
+                            <li><a href="#">我的订单</a></li>
+                            <li><a href="#">我的收藏</a></li>
+                            <li><a href="#">我的积分</a></li>
+                            <li><a href="#">我的积分卡</a></li>
+                            <li><a href="#">我的优惠卡</a></li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="mobile" id="mobile">
+                    <a href="#">
+                        <i></i>
+                        移动客户端
+                    </a>
+                    <div class="dd" id="j_dd">
+                        <div class="dv">
+
+                        </div>
+                        <div class="line">
+                        </div>
+                       <div class="dv2 fl">
+                           <p>扫我立即下载</p>
+                           <p>加入我们</p>
+                       </div>
+                        <div class="download">
+                            <a href="#" class="left"></a>
+                            <a href="#" class="right"></a>
+                        </div>
+                        <div class="fl deepColor">
+                            <a href="#">先摇卷</a> <a href="#">后买单</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="top_inner_help fr">
+            <ul>
+                <li id="j_helpSelf">
+                    <a href="#">帮助中心</a>
+                    <em></em>
+                    <ul class="active" id="active">
+                        <li><a href="">帮助中心</a><em></em></li>
+                        <li>
+                            <a href="">购物指南</a>
+                        </li>
+                        <li><a href="">配送服务</a></li>
+                        <li><a href="">支付方式</a></li>
+                        <li><a href="">售后服务</a></li>
+                        <li><a href="">客服邮箱</a></li>
+                    </ul>
+                </li>
+                <li id="j_inner_help">
+                    <a href="#">网站导航</a>
+                    <i></i>
+                    <div class="nav-mask" id="nav-mask">
+                    </div>
+                </li>
+                <li>
+                    <a href="#" title="关注顺丰">
+                        <img src="images/weibo.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="关注微信">
+                        <img src="images/icon-weixin.png" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--top部分结束 需要增加js  鼠标放上去显示下面效果-->
+<!--header 部分-->
+<div class="header">
+    <div class="header_inner w">
+        <div class="logo fl">
+            <a href="#" class="logo_target">
+
+            </a>
+            <a href="#" class="logo_prece">
+
+            </a>
+            <img src="images/logo_word.jpg" alt="">
+        </div>
+        <div class="header_inner_search">
+            <input type="text" placeholder="车厘子" class="txt">
+            <input type="submit" class="submit" value="搜索">
+            <div class="keyWords">
+                <a href="javascript:void(0) ">牛排</a>
+                <a href="javascript:void(0) ">盐焗鸡</a>
+                <a href="javascript:void(0) ">燕窝</a>
+                <a href="javascript:void(0) ">橙子</a>
+                <a href="javascript:void(0) ">五粮液</a>
+                <a href="javascript:void(0) ">燕窝</a>
+                <a href="javascript:void(0) ">洋酒</a>
+                <a href="javascript:void(0) ">白虾</a>
+                <a href="javascript:void(0) ">鳕鱼</a>
+                <a href="javascript:void(0) ">牛奶</a>
+            </div>
+        </div>
+        <div class="myCar" id="j_myCar">
+            <i></i>
+            <a href="#">我的购物车</a>
+            <b>
+                0
+            </b>
+            <div class="car_inner" id="j_car_inner">
+                <em></em>
+                <span>购物车中暂无商品</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!--header结束 得加特效-->
+<div class="mainBar">
+    <div class="bar w"> <!-- 需要鼠标进入显示下面的菜单-->
+        <div class="sift" id="j_sift">
+            <ul  id="menu" class="menu">
+                <li>
+                    <a href="#" class="current">
+                        精选商品分类
+                    </a>
+                    <!--二级菜单-->
+                    <ul class="opt hide" id="j_menu">
+                        <li id="dvapp">
+                                <span></span>
+                                <a href="#" class="current1">肉类海鲜</a>
+                            <br />
+                               <a href="#" class="padd">牛肉</a>
+                               <a href="#">羊肉</a>
+                               <a href="#">大闸蟹</a>
+                               <a href="#">鱼</a>
+                            <div class="dv1" id="j_dv1">
+                                <!--<div class="j-dv1">-->
+
+                                <!--</div>-->
+                            </div>
+                        </li>
+                        <li>
+                            <span class="span2"></span>
+                            <a href="#" class="current1">肉类海鲜</a>
+                            <br />
+                            <a href="#" class="padd">肌肉</a>
+                            <a href="#">大腿肉</a>
+                            <a href="#">羊肉</a>
+                            <div class="dv1" id="j_dv2">
+
+                            </div>
+                        </li>
+                        <li>
+                            <span class="span3"></span>
+                            <a href="#" class="current1">肉类海鲜</a> <br />
+                            <a href="#" class="padd">肌肉</a>
+                            <a href="#">大腿肉</a>
+                            <a href="#">羊肉</a>
+                            <div class="dv1">
+
+                            </div>
+                        </li>
+                        <li>
+                            <span class="span4"></span>
+                            <a href="#" class="current1">肉类海鲜</a> <br />
+                            <a href="#" class="padd">肌肉</a>
+                            <a href="#">大腿肉</a>
+                            <a href="#">羊肉</a>
+                            <div class="dv1">
+
+                            </div>
+                        </li>
+                        <li>
+                            <span class="span5"></span>
+                            <a href="#" class="current1">肉类海鲜</a> <br />
+                            <a href="#" class="padd">肌肉</a>
+                            <a href="#">大腿肉</a>
+                            <a href="#">羊肉</a>
+                            <div class="dv1">
+
+                            </div>
+                        </li>
+                        <li>
+                            <span class="span6"></span>
+                            <a href="#" class="current1">肉类海鲜</a> <br />
+                            <a href="#" class="padd">肌肉</a>
+                            <a href="#">大腿肉</a>
+                            <a href="#">羊肉</a>
+                            <div class="dv1">
+
+                            </div>
+                        </li>
+                        <li>
+                            <span class="span7"></span>
+                            <a href="#" class="current1">肉类海鲜</a> <br />
+                            <a href="#" class="padd">肌肉</a>
+                            <a href="#">大腿肉</a>
+                            <a href="#">羊肉</a>
+                            <div class="dv1">
+
+                            </div>
+                        </li>
+                        <li>
+                            <span class="span8"></span>
+                            <a href="#" class="current1">肉类海鲜</a> <br />
+                            <a href="#" class="padd">肌肉</a>
+                            <a href="#">大腿肉</a>
+                            <a href="#">羊肉</a>
+                            <div class="dv1">
+
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+        <div class="homePage">
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">优选生鲜</a></li>
+                <li><a href="#">优选厨房</a></li>
+                <li><a href="#">优选国际</a></li>
+                <li><a href="#">企业专区</a></li>
+                <li><a href="#">优选会员</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--nav 部分结束-->
+<div class="banner">
+
+</div>
+
+<div class="fix">
+    <div class="one" id="j_one">
+        <a href="#" class="one_a" >
+
+        </a>
+           <div class="car_inner_2" id="j_car_one">
+               <div class="aa">
+                   <!--<u></u>-->
+                   <span>购物车中暂无商品</span>
+               </div>
+           </div>
+    </div>
+    <div class="two">
+        <a href="#" class="two_a" id="j_two">
+
+        </a>
+        <div class="browse">
+            <div class="ppp">
+                <p>您的浏览记录</p>
+                <div class="inner-browse">
+                    暂无浏览记录
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="three">
+        <a href="#" class="three_a" id="j_three">
+        </a>
+          <div class="three-inner">
+              <div class="cc">
+                  <div class="dd three-scan" >
+                      <div class="dv">
+
+                      </div>
+                      <div class="line">
+                      </div>
+                      <div class="dv2 fl">
+                          <p>扫我立即下载</p>
+                          <p>加入我们</p>
+                      </div>
+                      <div class="fl deepColor">
+                          <a href="#">先摇卷</a> <a href="#">后买单</a>
+                      </div>
+                      <div class="floatIcon">
+
+                      </div>
+                  </div>
+              </div>
+          </div>
+    </div>
+    <div class="scoTop" >
+        <a href="javascript:;" id="j_scoTop"> </a>
+    </div>
+</div>
+
+<!--底部-->
+<div class="footer">
+    <div class="w foot">
+        <div class="foot-left">
+            <ul>
+                <li class="service">9533858</li>
+                <li>周一至周日8:30-22:00</li>
+            </ul>
+        </div>
+        <div class="foot-middle">
+            <ul class="middle-inner fl">
+                <li class="mid-current"><a href="javascript:;">购物指南</a></li>
+                <li><a href="javascript:;">积分制度</a></li>
+                <li><a href="javascript:;">会员介绍</a></li>
+                <li><a href="javascript:;">购物流程</a></li>
+                <li><a href="javascript:;">常见问题</a></li>
+            </ul>
+            <ul class="middle-inner fl">
+                <li class="mid-current"><a href="javascript:;">配送服务</a></li>
+                <li><a href="javascript:;">配送政策</a></li>
+                <li><a href="javascript:;">配送运费</a></li>
+                <li><a href="javascript:;">配送范围</a></li>
+                <li><a href="javascript:;">开箱验货</a></li>
+            </ul>
+            <ul class="middle-inner fl">
+                <li class="mid-current"><a href="javascript:;">支付方式</a></li>
+                <li><a href="javascript:;">货到付款</a></li>
+                <li><a href="javascript:;">优选卡</a></li>
+                <li><a href="javascript:;">发票制度</a></li>
+                <li><a href="javascript:;">在线支付</a></li>
+            </ul>
+            <ul class="middle-inner fl">
+                <li class="mid-current"><a href="javascript:;">售后服务</a></li>
+                <li><a href="javascript:;">退款说明</a></li>
+                <li><a href="javascript:;">退换货政策</a></li>
+                <li><a href="javascript:;">隐私条款</a></li>
+                <li><a href="javascript:;">退换货流程</a></li>
+            </ul>
+            <ul class="middle-inner fl">
+                <li class="mid-current"><a href="javascript">手机客户端</a></li>
+                <li>
+                    <div class="erweima">
+
+                    </div>
+                </li>
+            </ul>
+            <ul class="middle-inner fl">
+                <li class="mid-current"><a href="javascript">官方微信</a></li>
+                <li>
+                    <div class="organ">
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="deepfoot w">
+        <div class="pic fl">
+            <a href="javascript:;">
+                <img src="images/bottom_sm.png" alt="">
+            </a>
+            <a href="javascript:;">
+                <img src="images/credit.png" alt="">
+            </a>
+            <a href="javascript:;">
+                <img src="images/credit.png" alt="">
+            </a>
+        </div>
+        <div class="copy fl">
+            <a href="javascript:;">关于我们</a>
+            <a href="javascript:;">联系我们</a>
+            <a href="javascript:;">招聘人才</a>
+            <a href="javascript:;">友情链接</a>
+            <span>Copyright© 顺丰优选 sfbest.com 版权所有</span>
+            <p>京公网安备11010502026831号京ICP证150325号 <a href="javascript:;">食品经营许可证JY11113080533669号</a> <a href="javascript:;">企业营业执照</a></p>
+        </div>
+    </div>
+
+</div>
+
+
+
+</body>
+<script src="js/index.js"></script>
+</html>

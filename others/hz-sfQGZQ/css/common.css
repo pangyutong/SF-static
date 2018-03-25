@@ -1,0 +1,139 @@
+@charset "UTF-8";
+/*����Ĭ�ϱ��뼯*/
+/*css ��ʼ�� */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: "microsoft yahei","Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: inherit;
+    text-rendering: optimizeLegibility;
+    line-height: 1.4;
+    margin: 0;
+    display: block;
+    text-transform: none;
+    white-space: normal;
+}
+p{
+    font-size: inherit;
+    line-height: 1.6;
+    text-rendering: optimizeLegibility;
+    color: #9DAAC8;
+    font-family:"microsoft yahei";
+    display: block;
+}
+h4{
+    font: italic normal normal 10px Big Noodle Too,"microsoft yahei",impact,sans-serif;
+    font-size: 2.8rem;
+    line-height: normal;
+}
+/*���������ʾ��ͬ��ȥ���߿��Ĭ����ʽ*/
+fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "����";
+}
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+
+/*��ֹ�϶� Ӱ�첼��*/
+textarea {
+    resize: none;
+}
+
+/*ȥ�������滻Ԫ�ؿհ׷�϶*/
+img {
+    border: 0;
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+body {
+    font: 12px/150% Arial, Verdana, "\5b8b\4f53"; /*���� unicode */
+    background: #fff;
+    color: #405275;
+}
+
+/*�������*/
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #C81623;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+/*��������*/
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+/*版心*/
+.w {
+    width: 1122px;
+    margin: 0 auto;
+}
+/*左右浮动*/
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.al {
+    text-align: left;
+}
+
+.ac {
+    text-align: center;
+}
+
+.ar {
+    text-align: right;
+}
+
+.hide {
+    display: none;
+}

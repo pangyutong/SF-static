@@ -1,0 +1,793 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+    <title>企业专区-顺丰优选_Sfbest</title>
+    <link type="text/css" href="css/base_w1200.css" rel="stylesheet" />
+    <link type="text/css" href="css/company.css" rel="stylesheet" />
+    <script src="js/jquery-1.4.2.min.js" type="text/javascript"></script>
+    <script src="js/scrollpic_1.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/cart_1.js"></script>
+    <style>
+    .csmall_pic img{float:left;}
+    </style>
+</head>
+<body>
+<script type="text/javascript" src="js/cookie.js"></script>
+<script type="text/javascript" src="js/shadow.js"></script>
+<script>
+function AddFavorite(url,title){
+if(url==""){
+url = "http://www.sfbest.com";
+}
+if(title==""){
+title = "顺丰优选";
+}
+try{
+window.external.addFavorite(url, title);
+}catch (e){
+try{
+window.sidebar.addPanel(title, url, "");
+}catch (e){
+alert("您的浏览器不支持该操作!请您使用菜单栏或Ctrl+D收藏本站。");
+}
+}
+}
+
+</script>
+<div class="topMenu">
+  <div class="pW">
+    <ul class="fl topTh">
+     <li class="d1">冷链配送 顺丰到家 送至：</li>
+     <li class="d6 tShow" id="currentCityName"><p class="pshort"><span class="city_title1">...</span><b></b><span class="outline1"></span><span class="blank1"></span></p>
+        <div class="dd" id="headAllCity">
+        </div> 
+      </li>
+    </ul>
+    <ul class="fr topTh">
+      <li class="login" id="login"></li>
+      <li class="myOrder"><a name="sfbest_hp_hp_head_OrderList" class="trackref" href="http://home.sfbest.com/myorder/index/" rel="nofollow">我的订单</a></li>
+      <li class="menus">
+        <a name="sfbest_hp_hp_head_home1" href="http://home.sfbest.com/my/index/" rel="nofollow" class="trackref t">我的优选</a><b></b>
+        <span class="outline"></span>
+        <span class="blank"></span>
+        <div class="dd">
+          <div><a name="sfbest_hp_hp_head_home2" class="trackref" href="http://home.sfbest.com/myorder/index/" rel="nofollow">我的订单</a></div>
+          <div><a name="sfbest_hp_hp_head_home4" class="trackref" href="http://home.sfbest.com/my/points/" rel="nofollow">我的积分</a></div>
+          <div><a name="sfbest_hp_hp_head_home3" class="trackref" href="http://home.sfbest.com/favorites/index/" rel="nofollow">我的收藏</a></div>
+          <!-- <div><a href="http://home.sfbest.com/my/balance/" rel="nofollow">账户余额</a></div> -->
+          <div><a href="http://home.sfbest.com/giftcard/list/" rel="nofollow">我的优选卡</a></div>
+          <div><a href="http://home.sfbest.com/usercoupon/list/" rel="nofollow">我的优惠券</a></div>
+        </div>
+      </li>
+	  <li class="d2 tShow"><s></s><q></q><a name="sfbest_hp_hp_head_app1" class="trackref" href="http://app.sfbest.com/" target="_blank" class="t">移动客户端</a>
+        <div class="dd">
+          <div class="sf-client">
+            <span class="client-img"></span>
+            <i></i>
+            <div class="client-txt">
+              <em>扫描我，即可下载</em>
+              <strong>顺丰优选客户端</strong>
+            </div>
+          </div>
+          <div class="app-btn">
+            <a class="app-apple" target="_blank" rel="nofollow" href="http://itunes.apple.com/cn/app/id563194150"></a>
+            <a class="app-android" target="_blank" rel="nofollow" href="http://android.sfbest.com/sfandroid_gw_v1.2.apk"></a>
+          </div>
+        </div>
+        <div class="corner">
+          <div class="aBg"></div>
+          <div class="aCt"></div>
+        </div>
+      </li>
+	  <li class="menus">
+        <a name="sfbest_hp_hp_head_help1" href="http://help.sfbest.com/" target="_blank" class="trackref t">帮助中心</a><b></b>
+        <span class="outline"></span>
+        <span class="blank"></span>
+        <div class="dd">
+          <div><a name="sfbest_hp_hp_head_help2" class="trackref" href="http://help.sfbest.com/140/128.html" rel="nofollow" target="_blank">购物指南</a></div>
+          <div><a name="sfbest_hp_hp_head_help3" class="trackref" href="http://help.sfbest.com/141/134.html" rel="nofollow" target="_blank">配送服务</a></div>
+          <div><a name="sfbest_hp_hp_head_help4" class="trackref" href="http://help.sfbest.com/143/131.html" rel="nofollow" target="_blank">支付方式</a></div>
+          <div><a name="sfbest_hp_hp_head_help5" class="trackref" href="http://help.sfbest.com/144/143.html" rel="nofollow" target="_blank">售后服务</a></div>
+          <div><a name="sfbest_hp_hp_head_help7" class="trackref" href="http://help.sfbest.com/377/4407.html" rel="nofollow" target="_blank">客服邮箱</a></div>
+          <div><a name="sfbest_hp_hp_head_help8" class="trackref" href="http://help.sfbest.com/377/6766.html" rel="nofollow" target="_blank">投诉与建议</a></div>
+        </div>
+      </li>
+	  <li class="allCat"><em class="site">网站导航</em><s></s><span class="outline"></span> <span class="blank"></span>
+        <div class="dd">
+          <dl>
+           <dt class="dh1">商品分类</dt>
+            <dd>
+		        <a name="sfbest_hp_hp_head_category1" class="trackref" href="http://www.sfbest.com/fresh/" target="_blank">肉类海鲜</a>
+		        <a name="sfbest_hp_hp_head_category2" class="trackref" href="http://www.sfbest.com/fresh/" target="_blank">新鲜果蔬</a>
+			<a name="sfbest_hp_hp_head_category3" class="trackref" href="http://www.sfbest.com/fresh/" target="_blank">速食冷藏</a>
+			<a name="sfbest_hp_hp_head_category4" class="trackref" href="http://www.sfbest.com/multi/7417_7431_7433_7435_7437_7439_7441-0-0-0-0-2-0-0-0-0-0.html" target="_blank">酒水饮料</a>
+			<a name="sfbest_hp_hp_head_category5" class="trackref" href="http://www.sfbest.com/multi/7411_7413_7415-0-0-0-0-2-0-0-0-0-0.html" target="_blank">休闲糖巧</a>
+			<a name="sfbest_hp_hp_head_category6" class="trackref" href="http://www.sfbest.com/multi/7443_7445_7447_7449-0-0-0-0-2-0-0-0-0-0.html" target="_blank">粮油干货</a>
+			<a name="sfbest_hp_hp_head_category7" class="trackref" href="http://www.sfbest.com/mall/7451-0-0-0-0-2-0-0-0-0-0.html" target="_blank">冲调茶饮</a>
+			<a name="sfbest_hp_hp_head_category8" class="trackref" href="http://www.sfbest.com/ht/" target="_blank">优选国际</a>
+	       </dd>
+          </dl>
+          <dl class="line"></dl>
+          <dl>
+            <dt class="dh2">特色频道</dt>
+            <dd><a name="sfbest_hp_hp_head_channel12" class="trackref" href="http://www.sfbest.hk/" target="_blank">跨境直发</a><a name="sfbest_hp_hp_head_channel2" class="trackref" href="http://www.sfbest.com/qiye/" target="_blank">企业专区</a><a name="sfbest_hp_hp_head_channel3" class="trackref" href="http://www.sfbest.com/wine/" target="_blank">红酒廊</a><a name="sfbest_hp_hp_head_channel4" class="trackref" href="http://www.sfbest.com/taste/" target="_blank">寰宇美食</a>
+<!-- <a name="sfbest_hp_hp_head_channel5" class="trackref" href="http://www.sfbest.com/healthy/" target="_blank">健康养生</a>  -->
+<!-- <a name="sfbest_hp_hp_head_channel6" class="trackref" href="http://www.sfbest.com/member/" target="_blank">会员俱乐部</a> --></dd>
+          </dl>
+          <dl class="line"></dl>
+          <dl>
+            <dt class="dh3">更多</dt>
+            <dd><a name="sfbest_hp_hp_head_moreapp" class="trackref" href="http://app.sfbest.com/" target="_blank">客户端</a><a name="sfbest_hp_hp_head_moreabout" class="trackref"  href="http://www.sfbest.com/www/380/5118.html" target="_blank">关注我们</a><p>客服电话：9533858</p></dd>
+          </dl>
+        </div>
+      </li>
+      <li class="d3 tShow"><a name="sfbest_hp_hp_head_weibo" class="trackref" title="关注顺丰优选微博" href="http://weibo.com/sfbest" rel="nofollow" target="_blank"><q></q></a></li>
+      <li class="d4 tShow"><q></q><!--微信-->
+         <div class="dd">
+         <div class="sf_wx_t">关注顺丰优选微信</div>
+         <div class="sf_wx"></div>
+        </div>
+        <div class="corner">
+          <div class="aBg"></div>
+          <div class="aCt"></div>
+        </div>
+       </li>
+    </ul>
+    <span class="clear"></span>
+  </div>
+</div>
+<script language="javascript">
+$(document).ready(function(){
+    isOnline('http://www.sfbest.com','http://home.sfbest.com','https://passport.sfbest.com');
+    //$("img[src='http://i.sfbest.com/html/images/iconzf_r3_c2.jpg']").parent().remove();
+});
+</script>
+<div class="topMenu floatBar hide">
+  <div class="pW">
+    <div class="logo"><span></span></div>
+    <div class="search"><input type="text" class="inputSearch"><input type="button" class="inputSBtn" value=""></div>
+    <div class="nav">
+        <a name="sfbest_hp_hp_nav_nav1" href="http://www.sfbest.com" class="active trackref">首页</a>
+					<a name="sfbest_hp_hp_nav_nav2" class="trackref" href="/fresh/" >优选生鲜</a>
+								<a name="sfbest_hp_hp_nav_nav3" class="trackref" href="/html/activity/1449559102.html#trackref=sfbest_Uhead_Uhead_nav_nav5" >优选厨房</a>
+								<a name="sfbest_hp_hp_nav_nav4" class="trackref" href="/ht" >优选国际</a>
+								<a name="sfbest_hp_hp_nav_nav5" class="trackref" href="/qiye/" >企业专区</a>
+								<a name="sfbest_hp_hp_nav_nav6" class="trackref" href="/paidMember/" >优选会员</a>
+					    </div>
+    <ul class="fr topTh">
+      <li class="menus">
+        <a name="sfbest_hp_hp_head_home1" href="http://home.sfbest.com/my/index/" rel="nofollow" class="t trackref">我的优选</a><b></b>
+        <span class="outline"></span>
+        <span class="blank"></span>
+        <div class="dd">
+          <div><a name="sfbest_hp_hp_head_home2" class="trackref" href="http://home.sfbest.com/order/index/" rel="nofollow">我的订单</a></div>
+          <div><a name="sfbest_hp_hp_head_home4" class="trackref" href="http://home.sfbest.com/my/points/" rel="nofollow">我的积分</a></div>
+          <div><a name="sfbest_hp_hp_head_home3" class="trackref" href="http://home.sfbest.com/favorites/index/" rel="nofollow">我的收藏</a></div>
+          <!-- <div><a href="http://home.sfbest.com/my/balance/" rel="nofollow">账户余额</a></div> -->
+          <div><a href="http://home.sfbest.com/giftcard/list/" rel="nofollow">我的优选卡</a></div>
+          <div><a href="http://home.sfbest.com/usercoupon/list/" rel="nofollow">我的优惠券</a></div>
+        </div>
+      </li>
+      <li class="menus">
+        <a name="sfbest_hp_hp_head_help1" href="http://www.sfbest.com/www/140/128.html" target="_blank" class="trackref t">帮助中心</a><b></b>
+        <span class="outline"></span>
+        <span class="blank"></span>
+        <div class="dd">
+          
+          <div><a name="sfbest_hp_hp_head_help2" class="trackref" href="http://www.sfbest.com/www/140/128.html" rel="nofollow" target="_blank">购物指南</a></div>
+          <div><a name="sfbest_hp_hp_head_help3" class="trackref" href="http://www.sfbest.com/www/141/134.html" rel="nofollow" target="_blank">配送服务</a></div>
+          <div><a name="sfbest_hp_hp_head_help4" class="trackref" href="http://www.sfbest.com/www/143/131.html" rel="nofollow" target="_blank">支付方式</a></div>
+          <div><a name="sfbest_hp_hp_head_help5" class="trackref" href="http://www.sfbest.com/www/144/143.html" rel="nofollow" target="_blank">售后服务</a></div>
+          <div><a name="sfbest_hp_hp_head_help6" class="trackref" href="http://www.sfbest.com/www/142/138.html" rel="nofollow" target="_blank">常见问题</a></div>
+          <div><a name="sfbest_hp_hp_head_help7" class="trackref" href="http://www.sfbest.com/www/377/4407.html" rel="nofollow" target="_blank">客服邮箱</a></div>
+          <div><a name="sfbest_hp_hp_head_help8" class="trackref" href="http://www.sfbest.com/www/377/6766.html" rel="nofollow" target="_blank">投诉与建议</a></div>
+          
+        </div>
+      </li>
+      <li class="allCat">
+        <s></s><a href="http://www.sfbest.com/html/web/categorys.html" rel="nofollow" class="t">网站导航</a>
+        <span class="outline"></span>
+        <span class="blank"></span>
+         <div class="dd">
+          <dl>
+            <dt class="dh1">商品分类</dt>
+            <dd><a href="/fresh/">生鲜食品</a><a href="/drinks/">酒水饮料</a><a href="/food/">休闲食品</a><a href="/pastry/">饼干点心</a><a href="/tea/">冲调茶饮</a><a href="/oil/">粮油副食</a><a href="/baby/">母婴食品</a><a href="/health/">营养保健</a><a href="/tools/">美食用品</a></dd>
+          </dl>
+          <dl class="line"></dl>
+          <dl>
+            <dt class="dh2">特色频道</dt>
+            <dd><a href="/gifts/">产地直供</a><a href="/lipin/">礼品中心</a><a href="/qiye/">企业专区</a><a href="/wine/">红酒廊</a><a href="/taste/">寰宇美食</a><a href="/healthy/">健康养生</a></dd>
+          </dl>
+          <dl class="line"></dl>
+          <dl>
+            <dt class="dh3">更多</dt>
+            <dd><a href="http://app.sfbest.com/" target="_blank">客户端</a><a href="/www/380/5118.html" target="_blank">关注我们</a><p>客服电话：4009-111-111</p></dd>
+          </dl>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+<script type="text/javascript" src="js/jquery.autocomplete_1.js"></script>
+<link href="css/jquery.autocomplete_2.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/helper_1.js"></script>
+<div id="header">
+	<div class="header_inner">
+            <div class="logo">
+            	<a name="sfbest_Uhead_Uhead_head_logo" href="http://www.sfbest.com" class="trackref logoleft"></a><a name="sfbest_Uhead_Uhead_head_logo" href="http://www.sfbest.com" class="trackref logoright" title="顺丰优选"><span style="text-indent:-9999px; display:block;">顺丰优选</span></a><div class="logo-text"><img src="images/logo_word.jpg"></div>
+    		</div>
+
+		<div class="search">
+	                <form action="http://www.sfbest.com/productlist/search" id="searchForm" name="query" method="GET">
+                                <input type="hidden" name="inputBox" value="1">
+                                <input type="hidden" name="categoryId" value="0">
+                                <input type="hidden" id="deviceId" name="deviceId" value="0">
+                                <input type="hidden" id="couponTypeId" name="couponTypeId" value="0">
+                                <input type="text" class="text" name="keyword" id="keyword" value="" style="color: rgb(153, 153, 153); " >
+                                <input type="submit" value="" class="submit"/>
+			</form><div class="search_hot"></div>
+		</div>
+    <div class="shopingcar" id="topCart">
+      <s class="setCart"></s><a href="http://cart.sfbest.com" class="t" rel="nofollow">我的购物车</a><b id="cartNum">0</b>
+      <span class="outline"></span>
+      <span class="blank"></span>
+      <div id="cart_lists">
+        <!--cartContent-->   
+        <div class="clear"></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!--选择城市弹层start-->
+<div id="screen"></div>
+<div class="indexshadow" id="shadowAllCity">
+</div>
+<!--选择城市弹层end-->
+<script type="text/javascript">
+
+$(document).ready(function(){
+  getkeyword(1,'http://www.sfbest.com');
+  getWordAll(1,'http://www.sfbest.com');
+  getCartList();
+});
+function checkWord(len){
+	var str=$.trim($('#keyword').val());
+	var showstr = '';
+	myLen=0;
+	i=0;
+	for(;(i<str.length)&&(myLen<=len);i++){
+		if(str.charCodeAt(i)>0&&str.charCodeAt(i)<128){
+			myLen++;
+		}
+		else{
+			myLen+=2;
+		}
+		if(myLen-len <= 0)
+		{
+			showstr += str.substr(i,1);
+		}else{}
+	}
+	$('#keyword').val(showstr);
+}
+</script>
+<div class="mainNav">
+  <div class="navmenu">
+    <div class="categories" id="public_cate">
+      <div class="dt"><a name="sfbest_Uhead_Uhead_menu_all" class="trackref topall" href="javascript:void(0);">精选商品分类</a></div>
+      <div id="allSort" class="dd"></div>
+    </div>
+    <!----menufloat------->
+    <div class="menu1">
+      <ul>
+            <li><a name="sfbest_Uhead_Uhead_nav_nav1" class="trackref" href="http://www.sfbest.com">首页</a></li>
+            				<li id="cat1">
+					<a name="sfbest_Uhead_Uhead_nav_nav2" href="http://www.sfbest.com/fresh/" class="trackref 
+																																			"
+					>优选生鲜</a>
+									</li>
+							<li id="cat2">
+					<a name="sfbest_Uhead_Uhead_nav_nav3" href="http://www.sfbest.com/html/activity/1449559102.html#trackref=sfbest_Uhead_Uhead_nav_nav5" class="trackref 
+																																			"
+					>优选厨房</a>
+									</li>
+							<li id="cat3">
+					<a name="sfbest_Uhead_Uhead_nav_nav4" href="http://www.sfbest.com/ht" class="trackref 
+																																			"
+					>优选国际</a>
+									</li>
+							<li id="cat4">
+					<a name="sfbest_Uhead_Uhead_nav_nav5" href="http://www.sfbest.com/qiye/" class="trackref 
+																																			"
+					>企业专区</a>
+									</li>
+							<li id="cat5">
+					<a name="sfbest_Uhead_Uhead_nav_nav6" href="http://www.sfbest.com/paidMember/" class="trackref 
+																																			"
+					>优选会员</a>
+									</li>
+			              <!--
+                  <li class="minisite1"></li>
+		  <li class="minisite"><a name="sfbest_Uhead_Uhead_nav_nav6" class="trackref " href="http://www.sfbest.com/wine/">红酒廊</a></li>
+		  <li class="minisite"><a name="sfbest_Uhead_Uhead_nav_nav7" class="trackref " href="http://www.sfbest.com/taste/">寰宇美食</a></li>
+               -->
+      </ul>
+    </div>
+    <span class="clear"></span>
+  </div>
+</div>
+<DIV class="company_w cspace">
+<div class="company_t_left">
+<div class="company_t_l">
+    <div class="company_item">
+    <h2><span class="cmy1"></span>
+                                <a class="trackref" name="sfbest_channel_company_menu_category1" target="_blank" href="http://www.sfbest.com/html/activity/1407998224.html">精选礼品礼盒</a>
+                        </h2>
+    <ul>
+                                <li class="long_title"><a class="trackref" name="sfbest_channel_company_menu_category1-1" target="_blank" href="http://www.sfbest.com/html/activity/1407998224.html#m1">优选推荐</a></li>
+                        </ul>
+    </div>
+
+    <div class="company_item">
+    <h2><span class="cmy2"></span>
+                                    <a class="trackref" name="sfbest_channel_company_menu_category2" target="_blank" href="/html/web/card.html?p=0">优选卡</a>
+                        </h2>
+    <ul>
+                                    <li><a class="trackref" name="sfbest_channel_company_menu_category2-1" target="_blank" href="/html/web/card.html?p=0">电子卡</a></li>
+                                                <li><a class="trackref" name="sfbest_channel_company_menu_category2-2" target="_blank" href="/html/web/card.html?p=1">实体卡</a></li>
+                        </ul>
+    </div>
+
+    <div class="company_item">
+    <h2><span class="cmy4"></span>
+                                    <a class="trackref" name="sfbest_channel_company_menu_category4" target="_blank" href="http://www.sfbest.com/html/activity/1407912867.html">提货券</a>
+                        </h2>
+    <ul>
+                                    <li><a class="trackref" name="sfbest_channel_company_menu_category4-1" target="_blank" href="http://www.sfbest.com/html/activity/1463714920.html">六选一礼券</a></li>
+                                                <li><a class="trackref" name="sfbest_channel_company_menu_category4-2" target="_blank" href="http://www.sfbest.com/html/activity/1463715458.html">定制礼券</a></li>
+                        </ul>
+    </div>
+
+    <div class="company_item" style="height:180px"></div>
+</div>
+<div class="clear"></div>
+    <div class="tpic">
+                                <a class="trackref" name="sfbest_channel_company_menu_service" target="_blank" href="http://www.sfbest.com/html/activity/1403142011.html">企业服务</a>
+                    </div>
+</div>
+<div class="company_t_m">
+<div class="indexSlide">
+    <div class="slide_show" id="slide_show">
+      <div class="slide_wrap" id="index_slide">
+        <ol class="clearfix">
+                        <li>
+                                    <a class="big_pic trackref" name="sfbest_channel_company_focus_1" href="http://www.sfbest.com/html/activity/1444470771.html" target="_blank"><img id="lunbo_1" src="images/441996f6f49648647387adc9a71132e6.jpg" /></a>
+                		  	</li>
+                        <li>
+                                    <a class="big_pic trackref" name="sfbest_channel_company_focus_2" href="http://www.sfbest.com/html/activity/1463714920.html" target="_blank"><img id="lunbo_2" src="images/472166c6a154912311aa75b5d870029d.jpg" /></a>
+                		  	</li>
+                        <li>
+                                    <a class="big_pic trackref" name="sfbest_channel_company_focus_3" href="http://www.sfbest.com/html/activity/1463715458.html" target="_blank"><img id="lunbo_3" src="images/e52c4d01e382d7953d7a1c60da5a9370.jpg" /></a>
+                		  	</li>
+            		</ol>
+      </div>
+      <ul class="none" id="lunboNum">
+                	    	    <li  class="cur">1</li>
+                	    	    <li >2</li>
+                	    	    <li >3</li>
+                	          </ul>
+      <a style="display: none;" href="javascript:void(0);" class="show_next"><s></s></a>
+      <a style="display: none;" href="javascript:void(0);" class="show_pre"><s></s></a>
+    </div>
+  </div>
+</div>
+<div class="company_t_r">
+<ul>
+                        <li><a class="trackref" name="sfbest_channel_company_focus_ad1" target="_blank" href="http://b.sfbest.com"><img src="images/51af5894db121ef71b884a22516a9913.png"/></a></li>
+                                    <li><a class="trackref" name="sfbest_channel_company_focus_ad2" target="_blank" href="http://www.sfbest.com/html/activity/1403142011.html#trackref=sfbest_channel_comp"><img src="images/73ee27ed6865fb1a18a9948233940b09.jpg"/></a></li>
+            </ul>
+</div>
+<div></div>
+</DIV>
+<div class="clear"></div>
+<DIV class="company_w ad_01"> 
+            <a class="trackref" name="sfbest_channel_company_ad_banner1" target="_blank" href="http://www.sfbest.com/html/activity/1403142011.html#trackref=sfbest_channel_comp"><img src="images/acff04d0b7fdc09a765b198738efaa22.jpg" /></a>
+    </DIV>
+
+<!--
+<DIV class="company_w ad_02">
+        <span>
+                    <a class="trackref" name="sfbest_channel_company_ad_1" href="http://www.sfbest.com/mall/7439-0-0-0-0-2-0-0-0-0-0.html" target="_blank">
+                <img src="images/2ce5f5613b601e6404958195afc3816c.jpg" />
+            </a>
+            </span>
+        <span>
+                    <a class="trackref" name="sfbest_channel_company_ad_2" href="http://www.sfbest.com/mall/7415-0-0-0-0-2-0-0-0-0-0.html" target="_blank">
+                <img src="images/d2b813398318ae13d0b272d70bb322f5.jpg" />
+            </a>
+            </span>
+        <span>
+                    <a class="trackref" name="sfbest_channel_company_ad_3" href="http://www.sfbest.com/multi/7443_7445_7447_7449-0-0-0-0-2-0-0-0-0-0.html" target="_blank">
+                <img src="images/f1a7672776936646be517afa89552887.jpg" />
+            </a>
+            </span>
+        <span>
+                    <a class="trackref" name="sfbest_channel_company_ad_4" href="http://www.sfbest.com/mall/7421-0-0-0-0-2-0-0-0-0-0.html" target="_blank">
+                <img src="images/3816ee895e219869e8f902ac22f3eb13.jpg" />
+            </a>
+            </span>
+    </DIV>
+-->
+
+<div class="clear"></div>
+
+<!-- 楼层 -->
+                	<div class="company_w c_ps comcard">
+		<div class="company_m_l">
+			<div class="mTitle"><h2>优选卡</h2></div>
+			                                    <div class="ad_img"><a class="trackref" name="sfbest_channel_company_floor2_ad1" target="_blank" href="/html/web/card.html?p=1"><img src="images/dde2cb8d5a49c759cb19e0aca225b93d.jpg" /></a></div>
+                					</div>
+		<div class="sfRight">
+			<div class="slideArror"><b></b></div>
+			<div class="floorTop">
+			  <ul class="floorTab">
+			  				<li class="curr"><h3>优选推荐</h3></li>
+			  			  </ul>
+			</div>
+			<div class="subMain">
+				<div class="subCont">
+									<div class="first">
+						<div class="cbig_pic">
+						                                                            <a class="trackref" name="sfbest_channel_company_floor2_Tab1-ad1" target="_blank" href="/html/web/card.html?p=1"><img src="images/d784530003e44858bda2f9a18f0a5c33.jpg"/></a>
+                            						                                                            <a class="trackref" name="sfbest_channel_company_floor2_Tab1-ad2" target="_blank" href="/html/web/card.html?p=1"><img src="images/62200f438eb1de30da885de5ae67140c.jpg"/></a>
+                            												</div>
+						<div class="csmall_pic">
+						                                                            <a class="trackref" name="sfbest_channel_company_floor2_Tab1-ad3" target="_blank" href="/html/web/card.html?p=1"><img src="images/18db57381916da1c515649c8c54199cd.jpg"/></a>
+                            						                                                            <a class="trackref" name="sfbest_channel_company_floor2_Tab1-ad4" target="_blank" href="/html/web/card.html?p=1"><img src="images/15144adab3069642b99dba41aa6104f2.jpg"/></a>
+                            						                                                            <a class="trackref" name="sfbest_channel_company_floor2_Tab1-ad5" target="_blank" href="/html/web/card.html?p=1"><img src="images/d3702d29ef4efaa9c59a627ca741e639.jpg"/></a>
+                            						                                                            <a class="trackref" name="sfbest_channel_company_floor2_Tab1-ad6" target="_blank" href="/html/web/card.html?p=1"><img src="images/a61ede575a26d7aab9c0b4bf11ab6436.jpg"/></a>
+                            												</div>
+					</div>
+			    	
+				</div>
+			</div>
+		</div>
+		<span class="clr"></span>
+	</div>
+                    	<div class="company_w c_ps comticket">
+		<div class="company_m_l">
+			<div class="mTitle"><h2>提货劵</h2></div>
+			                                    <div class="ad_img"><a class="trackref" name="sfbest_channel_company_floor4_ad1" target="_blank" href="http://www.sfbest.com/html/activity/1414481114.html"><img src="images/b7582291afde8cff51fcd21a6d4f30dd.jpg" /></a></div>
+                					</div>
+		<div class="sfRight">
+			<div class="slideArror"><b></b></div>
+			<div class="floorTop">
+			  <ul class="floorTab">
+			  				<li class="curr"><h3>提货劵</h3></li>
+			  			  </ul>
+			</div>
+			<div class="subMain">
+				<div class="subCont">
+									<div class="first">
+						<div class="cbig_pic">
+						                                                            <a class="trackref" name="sfbest_channel_company_floor4_Tab1-ad1" target="_blank" href="http://www.sfbest.com/html/activity/1463714920.html"><img src="images/e80aebb081ff06e0c16c6f29ca627357.jpg"/></a>
+                            						                                                            <a class="trackref" name="sfbest_channel_company_floor4_Tab1-ad2" target="_blank" href="http://www.sfbest.com/html/activity/1463715458.html"><img src="images/a13765d24755a73ee6f8d2811bd54430.jpg"/></a>
+                            												</div>
+						<div class="csmall_pic">
+						                                                            <img src="images/52f70f298bbd72ba89b0e7484570e772.jpg"/>
+                            						                                                            <img src="images/2baae921210b71c192ee3e539fe190d6.jpg"/>
+                            						                                                            <img src="images/5a7dd1c16d996debcadf0cc9ae561f80.jpg"/>
+                            						                                                            <img src="images/f829a9b11d2ed01b9c64e7bb73d6c7b0.jpg"/>
+                            												</div>
+					</div>
+			    	
+				</div>
+			</div>
+		</div>
+		<span class="clr"></span>
+	</div>
+    <div class="clear1"></div>
+<!-- 百度再营销页面代码 Start -->
+<script>
+var _hmt = _hmt || [];
+var rtTag ={
+    "data": {
+		"ecom_page": {
+			"page_type": "channel",
+			"p_brand":"", 
+			"p_class1": "",
+			"p_class2": ""
+		}
+    }
+};
+_hmt.push(['_setAccount', '56b4bab8080250772f08703b41839413']);
+_hmt.push(['_trackRTEvent', rtTag]);
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?56b4bab8080250772f08703b41839413";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- 百度再营销页面代码 end -->
+<div id="footer">
+    <div class="footer_zd1">
+</div>
+<div class="foot">
+<div class="pageFooter">
+	<div class="middle">
+		<ul>
+			<li class="kefu">9533858</li>
+			<li>周一至周日8:30-22:00</li>
+		</ul>
+	</div>
+	<div class="right">
+		<ul>
+			<li class="title">购物指南</li>
+						<li><a rel="nofollow" href="http://help.sfbest.com/140/133.html" target="_blank">积分制度</a></li>
+						<li><a rel="nofollow" href="http://help.sfbest.com/140/132.html" target="_blank">会员介绍</a></li>
+						<li><a rel="nofollow" href="http://help.sfbest.com/140/128.html" target="_blank">购物流程</a></li>
+						<li><a rel="nofollow" href="http://help.sfbest.com/140/138.html" target="_blank">常见问题</a></li>
+					</ul>
+		<ul>
+			<li class="title">配送服务</li>
+			  <li><a rel="nofollow" href="http://help.sfbest.com/141/134.html" target="_blank">配送政策</a></li>
+			  <li><a rel="nofollow" href="http://help.sfbest.com/141/136.html" target="_blank">开箱验货</a></li>
+			  <li><a rel="nofollow" href="http://help.sfbest.com/141/137.html" target="_blank">配送运费</a></li>
+			  <li><a rel="nofollow" href="http://help.sfbest.com/141/135.html" target="_blank">配送范围</a></li>
+					</ul>
+		<ul>
+			<li class="title">支付方式</li>
+			  <li><a rel="nofollow" href="http://help.sfbest.com/143/139.html" target="_blank">货到付款</a></li>
+			  <li><a rel="nofollow" href="http://help.sfbest.com/143/141.html" target="_blank">在线支付</a></li>
+			  <li><a rel="nofollow" href="http://help.sfbest.com/143/131.html" target="_blank">优选卡</a></li>
+			  <li><a rel="nofollow" href="http://help.sfbest.com/143/142.html" target="_blank">发票制度</a></li>
+					</ul>
+		<ul>
+			<li class="title">售后服务</li>
+			  <li><a rel="nofollow" href="http://help.sfbest.com/144/145.html" target="_blank">退款说明</a></li>
+			  <li><a rel="nofollow" href="http://help.sfbest.com/144/144.html" target="_blank">退换货流程</a></li>
+			  <li><a rel="nofollow" href="http://help.sfbest.com/144/143.html" target="_blank">退换货政策</a></li>
+			  <li><a rel="nofollow" href="http://help.sfbest.com/390/4643.html" target="_blank">隐私条款</a></li>
+					</ul>
+                <ul class="sj">
+                <li class="title">商家中心</li>
+                                                                                                <li><a rel="nofollow" href="http://help.sfbest.com/392/7232.html" target="_blank">商家规则</a></li>
+                                                                                                <li><a rel="nofollow" href="http://help.sfbest.com/392/8659.html" target="_blank">食品安全规范</a></li>
+                                                                <li><a rel="nofollow" href="/html/activity/1474966515.html" target="_blank">委托管理创业招募</a></li>
+                </ul>
+	</div>
+	<div class="left">
+        <ul class="f_ios">
+          <li><a target="_blank" href="http://app.sfbest.com">手机客户端</a></li>
+          <li><span></span></li>
+        </ul>
+        <ul class="f_wx">
+          <li>官方微信</li>
+          <li><span></span></li>
+        </ul>
+      </div>
+</div>
+<div class="clear"></div>
+    <div id="float" style="display:none;"></div>
+<div class="bottom" style="position: relative;" >
+        <!--可信网站图片LOGO安装开始-->
+	<div class="bottom_kx" style ="position: static;padding: 0;">
+            <span id="kx_verify"></span><script type="text/javascript">(function (){var _kxs = document.createElement('script');_kxs.id = 'kx_script';_kxs.async = true;_kxs.setAttribute('cid', 'kx_verify');_kxs.src = ('https:' == document.location.protocol ? 'https://ss.knet.cn' : 'http://rr.knet.cn')+'/static/js/icon3.js?sn=e14052911011349517cnbv000000&tp=icon3';_kxs.setAttribute('size', 3);var _kx = document.getElementById('kx_verify');_kx.parentNode.insertBefore(_kxs, _kx);})();</script>
+	</div>
+        <!--可信网站图片LOGO安装结束-->
+        <!-- 诚信认证代码 start  20170710  -->
+        <div class="bottom_cx" style="position: static;padding: 0;float:left;margin-left: 5px;">
+            <a id='___szfw_logo___' href='https://credit.szfw.org/CX20170707035011220115.html' target='_blank'><img src='images/cert.png' border='0' style="height:33px" /></a>
+            <script type='text/javascript'>(function(){document.getElementById('___szfw_logo___').oncontextmenu = function(){return false;}})();</script>
+        </div>
+        <!-- 诚信认证代码 end -->
+        <div class="bottom_sm" style ="position: static;padding: 0;margin-left: 5px;"><a id="_pingansec_bottomimagesmall_shiming" href="http://si.trustutn.org/info?sn=332160125020173365693&certType=1" target="_blank"><img src="images/bottom_sm.png" style="height:33px"></a></div>
+    <div class="clear1"></div>
+    <div id="float" style="display:none;"></div>
+        <div class="siteinfo" style = "padding: 0;margin-left: 10px;position: absolute;top: 12px;left: 270px;">
+        <p>
+            <span><a rel="nofollow" href="http://www.sfbest.com/www/379/5109.html" target="_blank">关于我们</a></span>
+            <span><a rel="nofollow" href="http://www.sfbest.com/www/380/5116.html" target="_blank">联系我们</a></span>
+            <span><a rel="nofollow" href="http://www.sfbest.com/www/381/5117.html" target="_blank">招聘人才</a></span>
+            <span><a href="http://www.sfbest.com/www/330/2705.html" target="_blank">友情链接</a></span>
+            <span>Copyright© 顺丰优选 sfbest.com 版权所有</span></p>
+        <p>
+            <span>京公网安备11010502026831号</span>
+            <span><a class="beian" rel="nofollow" target="_blank" href="http://www.miibeian.gov.cn">京ICP证150325号</a></span>
+            <span><a class="beian" rel="nofollow" target="_blank" href="http://www.sfbest.com/www/174/8765.html">食品经营许可证JY11113080533669号</a></span>
+            <span><a class="beian" rel="nofollow" target="_blank" href="http://www.sfbest.com/www/174/461.html">企业营业执照</a></span>
+        </p>
+    </div>
+</div>
+</div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        // 显示隐藏元素
+        function thisdisplay(id,tag){
+            if(document.getElementById(id)){
+                var oBox=document.getElementById(id);
+                var aDiv=oBox.getElementsByTagName(tag)
+                oBox.onmouseover=function(){
+                    aDiv[0].style.display="block"
+                }
+                oBox.onmouseout=function(){
+                    aDiv[0].style.display="none"
+                }
+            }
+        }
+        thisdisplay('minisite','div');
+
+        var $backToTopTxt = "", $backToTopEle = $('<div class="backToTop"></div>').appendTo($("body"))
+            .text($backToTopTxt).attr("title", $backToTopTxt).click(function() {
+                $("html, body").animate({ scrollTop: 0 }, 120);
+        }), $backToTopFun = function() {
+            var st = $(document).scrollTop(), winh = $(window).height();
+            (st > 0)? $backToTopEle.show(): $backToTopEle.hide();   
+            // IE6下的定位
+            if ($.browser.msie && ($.browser.version == "6.0") && !$.support.style) {
+                $backToTopEle.css("top", st + winh - 37);
+            }
+        };
+        if ($(".side-wrap").length > 0){
+            $(".backToTop").hover(function(){$(this).addClass("backToTopHover")},function(){$(this).removeClass("backToTopHover")});
+            $(".backToTop").addClass("backToTop_pos");
+        }
+        $(window).bind("scroll", $backToTopFun);
+        $(function() { $backToTopFun(); });
+    });
+
+    function CNNIC_change(cnnic){
+        var str= document.getElementById(cnnic).href;
+        var str1 =str.substring(0,(str.length-6));
+        str1+=CNNIC_RndNum(6); 
+        document.getElementById(cnnic).href=str1;
+    }
+
+    function CNNIC_RndNum(k){
+        var rnd=""; 
+        for (var i=0;i < k;i++) rnd+=Math.floor(Math.random()*10); 
+            return rnd;
+    }
+</script>
+
+<!-- 百度统计代码 Start -->
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F56b4bab8080250772f08703b41839413' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<!-- 百度统计代码end -->
+
+<!-- 易博DPS 基础代码 start -->
+<script type="text/javascript"> 
+    var _adwq = _adwq || []; 
+    _adwq.push(['_setAccount', 'dj5p1']); 
+    _adwq.push(['_setDomainName', '.sfbest.com']); 
+    _adwq.push(['_trackPageview']); 
+
+    (function() { 
+        var adw = document.createElement('script'); 
+        adw.type = 'text/javascript'; 
+        adw.async = true; 
+        adw.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://s') + '.emarbox.com/js/adw.js'; 
+        var s = document.getElementsByTagName('script')[0]; 
+        s.parentNode.insertBefore(adw, s); 
+    })(); 
+</script>
+<!-- 易博DPS 基础代码 end -->
+
+<!-- Emarsys电子商务追踪 -->
+<script type="text/javascript" src="js/emstrack.js"></script>
+<script type="text/javascript" language="JavaScript">
+$(document).ready(function(){
+    emsSetEnv('suite');
+    emsTracking(273131129,'sfbest.com');
+});
+</script>
+
+<script async="true" type="text/javascript" src="js/sa.js"></script>
+
+<script type="text/javascript">
+/*百度定投*/
+(function (d) {
+window.bd_cpro_rtid="rj6YrHn";
+var s = d.createElement("script");s.type = "text/javascript";s.async = true;s.src = location.protocol + "//cpro.baidu.com/cpro/ui/rt.js";
+var s0 = d.getElementsByTagName("script")[0];s0.parentNode.insertBefore(s, s0);
+})(document);
+</script>
+
+<!-- ZYZ Code Start -->
+<script type="text/javascript">   
+    var _zaq = _zaq || [];
+    _zaq.push(['setTrackerUrl', 'http://tk.optaim.com/j']);
+    _zaq.push(['setSiteId', 'sfbest']);
+    _zaq.push(['trackPageView']);
+    var _zyzs = document.getElementsByTagName('script')[0];
+    var _s = document.createElement('script');
+    _s.src = "http://images.sohu.com/optaim/tk2014.js";
+    _s.type = 'text/javascript';
+    _s.async = true;
+    _zyzs.parentNode.insertBefore(_s, _zyzs);
+</script>
+<noscript>
+    <p><img src="images/6fb622c78c2f4cc58330b4258ab8cb5d.gif" width="0" height="0" border="0" alt="" /></p>
+</noscript>
+<!-- ZYZ Code End -->
+
+<!-- 百度再营销标准代码 Start -->
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?cceda50ef06cbaf44bdeaabe2470efee";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+<!-- 百度再营销标准代码 end -->
+
+<!-- start 记录sem的cookie -->
+<script>
+    var urlzszxcm = document.location.href;
+    var szszxcm = urlzszxcm.indexOf("semk=");
+    if (szszxcm != -1) {
+        var srczszxcm = urlzszxcm.substring(szszxcm);
+        if (srczszxcm) {
+            setCookie('_sf_bdp_sem_cc', srczszxcm, '', '/', '.sfbest.com', '');
+        }
+    }
+</script>
+<!-- end 记录sem的cookie -->
+</div>
+<div class="side_company">
+    <div class="r_t"><a class="trackref" name="sfbest_channel_company_hover_hotline" target="_blank" href="/html/activity/1403142011.html"><h3><p>企业集采热线</p><p class="tsmall">9533858</p></h3></a></div>
+    <div class="r_m">
+      <ul>
+        <li class="first" style="display:none;"><a class="c_pf trackref" name="sfbest_channel_company_hover_reg" target="_blank" href="https://passport.sfbest.com/reg/?regT=2" >注册企业客户></a></li>
+        <li>
+        <a class="c_pf trackref" name="sfbest_channel_company_hover_picking" target="_blank" href="/delivery/index" >提货券<br /><strong>我要提货</strong></a>
+        </li>
+        <li class="rnone"><a class="c_pf trackref" name="sfbest_channel_company_hover_activate" target="_blank" href="http://home.sfbest.com/giftcard/list/" >优选卡<br /><strong>我要激活</strong></a>
+        </li>
+        </ul>
+    </div>
+    <div class="r_f"></div>
+</div>
+<script type="text/javascript">
+//中间四个广告图片样式
+$(function(){
+  $(".ad_02 span").mouseover(function(){
+	  $(this).find(".ad02_c").css("display","block");
+	  });
+  $(".ad_02 span").mouseout(function(){
+	  $(this).find(".ad02_c").css("display","none");
+	  });
+$(".menu1").find('li').eq(6).find('a').addClass('btndown')
+})
+</script>
+<script type="text/javascript" src="js/qiye.js"></script>
+<!-- webtrekk代码 start-->
+<script type="text/javascript" src="js/webtrekk_v4.min.js"></script>
+<script type="text/javascript"> 
+var pageConfig = { 
+linkTrack :"link",  
+heatmap :"1"  
+}; 
+var wt = new webtrekkV3(pageConfig); 
+
+wt.contentId = "WEB:频道页:企业专区";
+wt.contentGroup = { 
+1 :"WEB:频道页",2 :"",3 :"" 
+};
+wt.sendinfo(); 
+</script> 
+<noscript> 
+<div><img src="images/wt.pl" height="1" width="1" alt="" /></div></noscript> 
+<!-- webtrekk代码 end-->
+</body>
+</html>
